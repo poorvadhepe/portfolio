@@ -1,11 +1,13 @@
 {
   "name": "poorva-portfolio",
   "version": "0.0.1",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  
+    "scripts": {
+  "dev": "vite",
+  "build": "node node_modules/vite/bin/vite.js build",
+  "preview": "vite preview",
+  "postinstall": "chmod +x node_modules/vite/bin/vite.js"
+},
   "dependencies": {
     "@babel/runtime": "^7.27.6",
     "framer-motion": "^12.19.2",
