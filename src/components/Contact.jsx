@@ -17,39 +17,43 @@ const Contact = () => {
         </h2>
 
         <form
-          className="bg-gray-50 shadow-md rounded-lg p-6 space-y-4"
-          action="https://formspree.io/f/mwkgakqk"
-          method="POST"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          ></textarea>
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  className="bg-gray-50 shadow-md rounded-lg p-6 space-y-4"
+>
+  <input type="hidden" name="form-name" value="contact" />
 
-          <button
-            type="submit"
-            className="bg-indigo-800 text-white px-6 py-2 rounded hover:bg-indigo-900 transition"
-          >
-            Send Message
-          </button>
-        </form>
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+    className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+  />
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+    className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+  />
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="Your Message"
+    required
+    className="w-full p-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+  ></textarea>
+
+  <button
+    type="submit"
+    className="bg-indigo-800 text-white px-6 py-2 rounded hover:bg-indigo-900 transition"
+  >
+    Send Message
+  </button>
+</form>
+
 
         <div className="mt-8 text-center text-gray-600 text-sm">
           <p>You can also reach me at:</p>
