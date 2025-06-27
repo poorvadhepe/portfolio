@@ -20,6 +20,7 @@ const Contact = () => {
   name="contact"
   method="POST"
   data-netlify="true"
+  action="/success"
   className="bg-gray-50 shadow-md rounded-lg p-6 space-y-4"
 >
   <input type="hidden" name="form-name" value="contact" />
